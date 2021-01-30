@@ -1,0 +1,94 @@
+@\import "https://valeriolyndon.github.io/MAL-Public-List-Designs/Clarity%20Theme/Theme%20-%20Compressed.css";
+@\import "https://malscraper.azurewebsites.net/covers/anime/Rasengan777/presets/dataimagelinkbefore";
+@\import "https://malscraper.azurewebsites.net/covers/manga/Rasengan777/presets/dataimagelinkbefore";
+@\import "https://valeriolyndon.github.io/MAL-Public-List-Designs/Clarity%20Theme/Mod%20-%20Hover%20Image%20On%20Circle%20Compressed.css";
+body { --avatar: url(https://media.tenor.com/images/7d7031a3d136939e156619282e519014/tenor.gif); }
+body { --banner: url(https://i.imgur.com/X2g3Hq5.jpg); }
+body { --character: None; }
+body { --background: url(https://wallpaperaccess.com/full/87215.jpg); }
+:root {
+	/* Generic Colours */
+	--pbg: #efefef;
+	--bg: #ffe2e6;
+	--bg-dark: #ddd;
+	--text: #323232;
+	--text-h: #787878;
+	--text-dim: #000000;
+	--text-dim-h: #646464;
+	--text-dark: #111;
+	--icon: #323232;
+	--accent: #4065ba;
+	--banner-text: #fff;
+	--banner-text-shadow: rgba(0,0,0,0.45);
+
+	/* Button Colours */
+	--btn-bg: #FFFFFF;
+	--btn-bg-h: #323232;
+	--btn-head-bg-h: #EFFDF5;
+	--btn-text-h: #fff;
+
+	/* Header Colours */
+	--text-head: #000000;
+	--text-head-h: #800000;
+
+	/* Status Colours */
+	--watching: #2db039;
+	--completed: #26448f;
+	--onhold: #f1c83e;
+	--dropped: #a12f31;
+	--plantowatch: #c3c3c3;
+
+	/* Single-Use Colours */
+	--cover-bg: #323232;
+	--edit-btn: #d9d9d9;
+	--checkmark: #9696eb;
+}
+:root {
+	/* Change colour here */
+	--row-tint: rgba(255,255,255,0.5);
+}
+
+.list-item, .data.priority, .data.number, .data.status:before, .data.status:after {
+	background: linear-gradient(var(--row-tint),var(--row-tint)), var(--background) no-repeat center / cover fixed transparent !important;
+}
+/*Change number here*/
+:root { --banner-height: 400px; }
+
+.cover-block { height: var(--banner-height); }
+.header { margin-top: calc(var(--banner-height) - 60px); }
+.list-stats { top: calc(var(--banner-height) + 98px); }
+
+footer:before, footer:after {
+	content: "";
+	position: fixed;
+	top: 0;
+	z-index: -1;
+	
+	width: calc(50% - 538px);
+	min-width: 262px;
+	height: 100%;
+	background: transparent no-repeat center bottom / contain scroll;
+}
+
+/* Left Render */
+footer:before {
+	right: calc(100% - (50% - 538px));
+	
+	background-image: none;
+	background-position: left bottom;
+}
+
+/* Right Render */
+footer:after {
+	left: calc(100% - (55% - 538px));
+	
+	background-image: none;
+	background-position: right bottom;
+}
+.status-menu .status-button{transition:color .3s ease}.status-menu .status-button.on:nth-of-type(1),.status-menu .status-button:nth-of-type(1):hover{color:var(--accent)!important}.status-menu .status-button.on:nth-of-type(2),.status-menu .status-button:nth-of-type(2):hover{color:var(--watching)!important}.status-menu .status-button.on:nth-of-type(3),.status-menu .status-button:nth-of-type(3):hover{color:var(--completed)!important}.status-menu .status-button.on:nth-of-type(4),.status-menu .status-button:nth-of-type(4):hover{color:var(--onhold)!important}.status-menu .status-button.on:nth-of-type(5),.status-menu .status-button:nth-of-type(5):hover{color:var(--dropped)!important}.status-menu .status-button.on:nth-of-type(6),.status-menu .status-button:nth-of-type(6):hover{color:var(--plantowatch)!important}
+/* Raise or lower this number to change how wide the box is. Make sure not to remove the "px" at the end. */
+.data.tags { width: 240px; }
+
+.data.tags div:not(:empty){padding:2px 8px;background:var(--btn-bg);border-radius:8.5px}.data.tags span{display:inline;font-size:11px!important;cursor:text}.data.tags a:not(.edit){display:inline;padding:0;background:0 0;pointer-events:none}
+/*------------------------E-N-D-*/
+/*------------------------E-N-D-*/
